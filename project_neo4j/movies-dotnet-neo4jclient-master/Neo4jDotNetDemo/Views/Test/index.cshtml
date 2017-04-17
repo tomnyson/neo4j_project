@@ -1,0 +1,25 @@
+﻿@{
+
+    Layout = null;
+}
+@model Neo4jDotNetDemo.Models.Person
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+       <ul>
+    @foreach (var std in ViewBag.students)
+    {
+        <li>@std</li>
+    }
+           </ul>
+    </div>
+  @ViewData.Model.Name;
+ @ViewBag.nguoi.Name;
+</body>
+</html>
